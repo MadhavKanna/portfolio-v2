@@ -1,0 +1,129 @@
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.gretting-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.button-greeting-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.greeting-text {
+  margin-top: 80px;
+  font-size: 70px;
+  line-height: 1.1;
+  font-family: "Google Sans Bold";
+}
+
+.greeting-nickname {
+  font-size: 30px;
+  line-height: 0px;
+  font-family: "Google Sans Bold Italic";
+}
+
+.greeting-text-p {
+  font-size: 40px;
+  line-height: 40px;
+  margin-right: 40px;
+  font-family: "Google Sans Medium";
+}
+
+.greeting-image-div > * {
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.greeting-text-div {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+/* Media Query */
+@media (max-width: 1380px) {
+  .greeting-text {
+    font-size: 50px;
+  }
+  .greeting-text-p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .button-greeting-div {
+    justify-content: space-around;
+  }
+
+  .greeting-img-text {
+    flex-direction: column; /* Stack image and text vertically on smaller screens */
+    align-items: center; /* Center align for better appearance */
+  }
+
+  .circular-image {
+    /* width: 120px;
+    height: 120px; */
+    max-height: 300px; /* Reduce size for smaller screens */
+  }
+  .greeting-text {
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .greeting-nickname {
+    font-size: 25px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+  .greeting-main {
+    display: block;
+  }
+
+  .portfolio-repo-btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.circular-image {
+  width: 300px; /* Set your desired size */
+  height: 250px; /* Ensure it's a square for the circle */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  border: 5px solid white; /* Adjust the border thickness */
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Ensures the border cuts into the image if needed */
+}
+
+.greeting-img-text {
+  display: flex;
+  align-items: center; /* Vertically align the image and text */
+  justify-content: flex-start; /* Keep the image and text aligned to the left */
+  gap: 20px; /* Add space between the image and the text */
+}
